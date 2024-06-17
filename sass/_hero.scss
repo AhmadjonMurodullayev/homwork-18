@@ -1,0 +1,87 @@
+.hero{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &-box1{
+        padding: 40px 20px ;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 8px;
+    }
+    &-box1-title{
+        font-size: 25px;
+    }
+    &-box1-btn{
+        border-radius: 10px;
+        padding: 10px;
+        background-color: inherit;
+        border: 2px solid #FBD029;
+    }
+    &-box1-img{
+        img{
+            width: 100%;
+        }
+    }
+    &-box2{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero-box2-itms{
+        padding: 10px 10px;
+        width:100%;
+        height:180px;
+        display: flex;
+        border-radius: 8px;
+        background-color: white;
+    
+    }
+    .hero-box2-itms-text{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero-box2-itms-img{
+        width: 40%;
+        padding: 40px 0px;
+        img{
+            width: 100%;
+        }
+    }
+    .hero-box2-itms-text-info{
+        color: red;
+    }
+    .hero-box2-itms-text-infos{
+        color: black;
+    }
+}
+@media(min-width:768px){
+    .hero{
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+@media(min-width:992px){
+      .hero{
+        &-box1{
+            background-color: white;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .hero-box1-title{
+            font-size: 30px;
+        }
+        .hero-box1-text{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .hero-box1-btn{
+            width: 150px;
+            cursor: pointer;
+        }
+      }
+}
